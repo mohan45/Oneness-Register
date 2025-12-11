@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registered Successfully</title>
+<link rel="icon" href="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2147915250/settings_images/2d7b10f-dc8c-b10f-74b-c103aba8a8b0_909533ad-96dd-4a11-b35e-f34538d08ec9.png" type="image/png">
+<!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="success-page">
+
+  <div class="success-icon">
+    <!-- <div class="success-round checkwrapper">
+      <div class="success-round checkround">
+        <div class="success-round checkcircle"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#b76e33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <!-- </div>
+      </div>
+    </div> -->
+
+  </div>
+
+  <div class="success-title">You are registered!</div>
+  <div class="success-subtitle">
+    Welcome, <span id="username"></span>! We can't wait to see you.
+  </div>
+
+  <div class="success-card">
+    <div class="session-bgcolor">
+        <div class="session">Your session</div>
+        <div class="row">
+            <div class="icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="7" width="22" height="20" rx="3" stroke="#C2A375" stroke-width="1.5"/>
+                <line x1="5" y1="12" x2="27" y2="12" stroke="#C2A375" stroke-width="1.5"/>
+                <line x1="10" y1="5" x2="10" y2="9" stroke="#C2A375" stroke-width="1.5"/>
+                <line x1="22" y1="5" x2="22" y2="9" stroke="#C2A375" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+            <small>Date</small>
+            <div class="value">January 23 to 25, 2026</div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="13" stroke="#C2A375" stroke-width="1.5"/>
+                <line x1="16" y1="9" x2="16" y2="16" stroke="#C2A375" stroke-width="1.5"/>
+                <line x1="16" y1="16" x2="22" y2="19" stroke="#C2A375" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+            <small>Your local time</small>
+            <div class="value">11AM</div>
+            </div>
+        </div>
+    </div>
+    <div class="session-bgcolor">
+        <div class="invite">
+        <button class="invite-button" onclick="copyInvite()">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="5" r="2.2" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="6" cy="12" r="2.2" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="18" cy="19" r="2.2" stroke="black" stroke-width="1.5" fill="none"/>
+            <line x1="7.8" y1="10.8" x2="16.2" y2="6.4" stroke="black" stroke-width="1.5"/>
+            <line x1="7.8" y1="13.2" x2="16.2" y2="17.6" stroke="black" stroke-width="1.5"/>
+          </svg>INVITE YOUR LOVED ONES</button>
+        <span onclick="copyInvite()" class="copy">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+            <!-- Back page -->
+            <rect x="5" y="3" width="11" height="14" rx="2"
+                  stroke="#333333" stroke-width="1.5"/>
+
+            <!-- Front page -->
+            <rect x="8" y="7" width="11" height="14" rx="2"
+                  stroke="#333333" stroke-width="1.5"/>
+          </svg>
+        </span>
+        </div>
+
+        <div class="share-text">
+        Share this experience with someone who matters to you.
+        The insights you receive are even more powerful when you walk this journey with someone <br>you love.
+        </div>
+    </div>
+  </div>
+
+  <div class="more" onclick="goRegisterPage()">Learn more about the summit</div>
+  <div class="more" onclick="goBack()">back</div>
+
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
