@@ -359,7 +359,8 @@ button.active {
 .more {
   margin-top: 30px;
   font-size: 13px;
-  color: #B3AB9F;
+  /* color: #B3AB9F; */
+  color: blue;
   cursor: pointer;
 }
 
