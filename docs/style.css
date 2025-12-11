@@ -104,9 +104,14 @@ body {
   padding-bottom: 14px;
 }
 
+.note-head {
+  display: inline-flex;
+  gap: 10px;
+}
+
 .subnote {
   display: block;
-  margin-top: 9px;
+  margin-top: 4px;
   padding: 0px 0px 10px 0px;
   color: #99918d;
   font-size: 13px;
@@ -138,6 +143,7 @@ input {
   border-radius: 6px;
   outline: none;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 input:focus {
@@ -644,17 +650,64 @@ input:focus,select:focus{
 
 /* ===== MOBILE (max-width: 480px) ===== */
 @media (max-width: 480px) {
+
+    /* SVG image */
+    .svg-video, .svg-date, .svg-share {
+      width: 26px;
+      height: 26px;
+    }
+     
     .badge {
+      font-size: 10px;
+    }
+    .headtitle {
+      font-size: 32px;
+    }
+    .subtitle{
+      font-size: 10px;
+    }
+    .date {
       font-size: 12px;
+      margin-top: 0px;
+    }
+    .joined {
+      margin-top: 10px;
+      font-size: 12px;
+      padding: 5px 18px;
+    }
+    .joined img {
+      width: 60px;
+      height: 24px;
+    }
+    .card {
+      margin-top: 22px;
+      padding: 18px 26px;
+    }
+    .inner-form {
+        margin: 16px 0px;
+    }
+    .note {
+      color: #3c3b37;
+      font-weight: 600;
+      border-bottom: 1px solid #EEE5D7;
+      padding-bottom: 14px;
+    }
+    .note-head {
+      gap: 5px;
+    }
+    .subnote {
+      margin-top: 1px;
+      padding: 0px 0px 6px 0px;
+      font-size: 11px;
+    }
+    label {
+      margin: 8px 0px 8px 0px;
     }
     .invite-button {
       padding: 0px 24px;
       font-size: 10px;
     }
-    .svg-share {
-      width: 26px;
-      height: 26px;
-    }
+    
     .share-text {
       font-size: 10px;
       line-height: 16px;
